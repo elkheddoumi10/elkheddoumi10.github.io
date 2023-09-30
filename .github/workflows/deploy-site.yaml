@@ -3,13 +3,7 @@ name: Deploy to Github Pages
 # run when a commit is pushed to "source" branch
 on:
   push:
-    branches:
-<<<<<<< HEAD
-    - souce
-=======
-    - source
->>>>>>> c8d87fca7758939cdadf646451fd30f84b683dc1
-
+    branches: souce
 jobs:
   deploy:
     runs-on: ubuntu-latest
