@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Compilation de préférences pour les systèmes d&#39;aide à la décision</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/assets/css/layouts/main.css"/>
+<link rel="stylesheet" href="/assets/css/style.css"/>
+<link rel="stylesheet" href="/assets/css/navigators/navbar.css"/>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+
+
+<link rel="icon" type="image/png" href="/images/site/karim_logo.png" />
+
+
+<link rel="stylesheet" href="/assets/css/style.css"/>
+
+    
+<meta name="description" content="Comment les préférences peuvent être compilées, afin de permettre une réponse rapide aux requêtes" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+/>
+<link rel="stylesheet" href="/assets/css/layouts/single.css"/>
+<link rel="stylesheet" href="/assets/css/navigators/sidebar.css">
+
+
+    
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-122321624-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+  </head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+  
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+  <div class="container">
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/">
+      <img src="/images/site/karim_logo.png">KARIM EL-KHEDDOUMI</a>
+    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+      
+      </ul>
+    </div>
+  </div>
+  
+  <img src="/images/site/karim_logo.png" class="d-none" id="main-logo">
+  <img src="/images/site/karim_logo.png" class="d-none" id="inverted-logo">
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <input type="text" value="" placeholder="Search" data-search="" id="search-box" />
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/introduction/">Introduction</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/posts/category/">Category</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/posts/category/sub-category/">Sub-Category</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/category/sub-category/rich-content/">Rich Content</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/markdown-sample/">Markdown Sample</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/shortcodes/">Shortcodes Sample</a></li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://elkheddoumi10.github.io/images/BandeauANITI.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/author/class1.jpg'/>
+          <h5 class="author-name">Karim EL-KHEDDOUMI</h5>
+          <p>September 7, 2020</p>
+        </div>
+
+        <div class="title">
+          <h1>Compilation de préférences pour les systèmes d&#39;aide à la décision</h1>
+        </div>
+
+        <div class="post-content" id="post-content">
+          <h1 id="contexte-général">Contexte général</h1>
+<p>The Master&rsquo;s level Internships provide the opportunity for hands-on experience in a student affairs setting. I had the chance to add an interesting experience to my CV by doing a 5-month internship with <a href="https://www.irit.fr/">Institut de recherche en informatique de Toulouse (IRIT)</a> as part of <a href="https://en.univ-toulouse.fr/aniti">ANITI project</a>. In this internship I worked on the following subject &ldquo;Preferences compilation for decision suport systems&rdquo; in the next section I&rsquo;ll explainto you  the subject in more detail.</p>
+<h1 id="sujet-du-travaille">Sujet du travaille</h1>
+<p>Les systèmes d’aide à la décision, comme les configurateurs en ligne ou les systèmes de recommandation, doivent s’adapter à chaque utilisateur afin d’offrir une meilleure interaction et de guider rapidement l’utilisateur vers la meilleure décision pour lui: le système doit être capable de rassembler un modèle du préférences de l’utilisateur et être en
+mesure de lui montrer, presque instantanément, pendant l’interaction, ce qui semble être ses meilleures alternatives possibles. Plusieurs modèles de préférences ont été développés dans la littérature sur l’intelligence artificielle et la recherche opérationnelle, offrant la possibilité de représenter des préférences complexes sur des domaines à attributs multiples sous une forme plutôt compacte. La richesse de ces modèles a un coût: trouver les alternatives optimales ou comparer entre deux objets sont, en général, des problèmes de calcul difficile - au moins NP-difficile - sauf pour certains modèles assez restrictifs.</p>
+<p>Les requêtes de calculs complexes sont également typiques de nombreux systèmes basés sur la logique. Au cours des deux dernières décennies, une nouvelle approche, appelée &ldquo;Compilation de connaissances&rdquo; a été étudiée pour faire face à de telles requêtes difficiles dans le contexte de systèmes en temps réel: les bases logiques peuvent être compilées, hors ligne, dans une représentation moins compacte, telle que GAI-Décomposition et VDD, qui permet une réponse rapide aux requêtes (en temps polynomial). Si, en théorie, la taille de ces représentations moins compactes peut croître de façon exponentielle rapidement avec le nombre de variables, cette explosion ne se produit pas souvent en pratique.</p>
+<p>Le but principal de ce travail est d’étudier comment les préférences peuvent être compilées, afin de permettre une réponse rapide aux requêtes qui consistent, par exemple, à trouver les alternatives optimales compte tenu de certains choix déjà faits et compte tenu de certaines contraintes ou de comparaison entre les alternatives (test de dominance). Sur
+le plan pratique, le travail consistera à concevoir et implémenter un compilateur pour transformer les CP-nets en GAI-Décompositions et en SLDD (Semiring Labeled Decision Diagrams).</p>
+<p><a href="https://drive.google.com/file/d/1sQsZ70N9fVJaltj4BfQ7WNhl_fdGHxki/view?usp=sharing">Ici</a>, vous pouvez trouver une version française de mon travail. Je n&rsquo;ai pas encore partagé le code pour des raisons confidentielles.</p>
+
+        </div>
+
+        
+        
+          <div class="btn-improve-page">
+              <a href="https://github.com/elkheddoumi10/elkheddoumi10.github.io/edit/master/content/posts%5cpreferences%5cindex.fr.md">
+                <i class="fas fa-code-branch"></i>
+                Improve this page
+              </a>
+          </div>
+        
+
+        
+      <hr />
+        <div class="row next-prev-navigator">
+
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+      
+      <div class="col-md-6 previous-article">
+        <a href="/posts/face_mask/" class="btn btn-outline-info">
+          <span><i class="fas fa-chevron-circle-left"></i> Prev</span>
+          <br />
+          <span>Face Mask detection application using deep learning approache, Keras//Tensorflow and openCV</span>
+        </a>
+      </div>
+      
+    
+    
+      
+        
+        
+          
+              
+          
+        
+        <div class="col-md-6 next-article">
+          <a href="/posts/introduction/" class="btn btn-outline-info">
+            <span>Next <i class="fas fa-chevron-circle-right"></i></span>
+            <br />
+            <span>Introduction</span>
+          </a>
+        </div>
+      
+    
+  
+
+  
+
+</div>
+
+      <hr />
+      
+      
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3">Table of Contents</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents"></nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+
+  
+
+
+
+
+  
+
+
+
+
+  
+  
+    
+  
+
+
+<footer class="container-fluid text-center align-content-center footer pb-2">
+  <div class="container pt-5">
+    <div class="row text-left">
+      <div class="col-md-4 col-sm-12">
+        <h5>Navigation</h5>
+        
+        <ul>
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#about">About</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#skills">Skills</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#experiences">Experiences</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#projects">Projects</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#recent-posts">Recent Posts</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#achievements">Achievements</a>
+              </li>
+            
+        </ul>
+        
+
+      </div>
+      
+      <div class="col-md-4 col-sm-12">
+        <h5>Contact me:</h5>
+        <ul>
+          
+          <li><span>Email: </span> <span>karimelkheddoumi@outlook.de</span></li>
+          
+          <li><span>Phone: </span> <span>&#43;212625393917</span></li>
+          
+        </ul>
+      </div>
+      
+      
+    </div>
+  </div>
+  <hr />
+  <div class="container">
+    <div class="row text-left">
+      <div class="col-md-4">
+        <a id="theme" href="https://github.com/hossainemruz/toha" target="#">
+          <img src="/assets/images/inverted-logo.png">
+          Toha
+        </a>
+      </div>
+      <div class="col-md-4 text-center">© 2020 Copyright.</div>
+      <div class="col-md-4 text-right">
+        <a id="hugo" href="https://gohugo.io/">Powered by
+        <img
+          src="/assets/images/hugo-logo-wide.svg"
+          alt="Hugo Logo"
+          height="18"
+        />
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="/assets/js/jquery-3.4.1.min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+
+<script src="/assets/js/navbar.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/assets/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+  </body>
+</html>
